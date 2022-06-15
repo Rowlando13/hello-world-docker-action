@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Checkout 
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: Hello world action step 2
+        uses: ./
         id: hello
-        uses: r./docks/action.yml
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
